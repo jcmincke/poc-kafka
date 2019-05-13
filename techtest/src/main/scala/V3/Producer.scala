@@ -11,11 +11,11 @@ import io.circe.generic.auto._
 import org.apache.kafka.clients.producer._
 import org.apache.kafka.common.utils.Bytes
 import org.apache.kafka.streams.{Consumed, KafkaStreams}
-import org.apache.kafka.streams.kstream.{Materialized, Produced, Serialized}
+import org.apache.kafka.streams.kstream.{Materialized, Serialized}
 import org.apache.kafka.streams.state.{KeyValueStore, QueryableStoreTypes, ReadOnlyKeyValueStore}
 import org.apache.kafka.streams.StreamsConfig
 
-import org.joda.time.{DateTime, DateTimeZone, Instant}
+import org.joda.time.{DateTime, DateTimeZone}
 import org.apache.kafka.streams.kstream.Produced
 
 

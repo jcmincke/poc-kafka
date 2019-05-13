@@ -23,7 +23,6 @@ object Server  {
   val host = "0.0.0.0"
 
   implicit val system: ActorSystem = ActorSystem("Main")
-//  implicit val executor: ExecutionContext = system.dispatcher
   implicit val materializer : ActorMaterializer = ActorMaterializer()
 
    def main(args: Array[String]) {
