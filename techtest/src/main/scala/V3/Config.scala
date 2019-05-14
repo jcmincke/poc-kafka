@@ -3,7 +3,7 @@ package V3
 import scopt.OParser
 
 
-case class Config
+case class Config 
   ( port: Int = 9000
   , app: String = "app-1"
   )

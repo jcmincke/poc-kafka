@@ -8,7 +8,11 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message 
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic aggregatedMessage --from-beginning
 
 
-# Send some messages
+# command line arguments:
+
+-p port-number -a app-name
+
+# Send some messages (or run quickcheck tests)
 curl -X POST 'http://localhost:9000/analytics?timestamp=60&user=me&event=click'
 curl -X POST 'http://localhost:9000/analytics?timestamp=60&user=me&event=impression'
 curl -X POST 'http://localhost:9000/analytics?timestamp=60&user=you&event=click'
